@@ -1,4 +1,4 @@
 package entities;
 
-public class OutsourceEmployee {
+public class OutsourceEmployee  {
 }
