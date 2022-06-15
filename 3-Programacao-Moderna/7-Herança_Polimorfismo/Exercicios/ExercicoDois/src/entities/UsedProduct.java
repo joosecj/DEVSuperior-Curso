@@ -4,7 +4,7 @@ package entities;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public final class UsedProduct extends Product {
+public class UsedProduct extends Product {
 
     private static final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
