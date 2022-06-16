@@ -4,6 +4,7 @@ public final class Company extends TaxPayer {
     private Integer numberOfEmployees;
 
     public Company(){
+        super();
     }
 
     public Company(String name, Double anualIncome, Integer numberOfEmployees) {
@@ -26,6 +27,12 @@ public final class Company extends TaxPayer {
             corporateTax = 0.14;
         }
         return getAnualIncome() * corporateTax;
+    }
+    @Override
+    public final String showOnScreen (){
+        return  getName()
+                + ": $ "
+                + String.format("%.2f", tax());
     }
 
 }

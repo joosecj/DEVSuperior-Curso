@@ -28,4 +28,6 @@ public abstract class TaxPayer {
     }
 
     public abstract double tax();
+
+    public abstract String showOnScreen();
 }

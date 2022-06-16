@@ -1,12 +1,13 @@
 package entitites;
 
-public final class Indivudual extends TaxPayer {
+public final class Individual extends TaxPayer {
     private Double heathExpenditures;
 
-    public Indivudual(){
+    public Individual(){
+        super();
     }
 
-    public Indivudual(String name, Double anualIncome, Double heathExpenditures) {
+    public Individual(String name, Double anualIncome, Double heathExpenditures) {
         super(name, anualIncome);
         this.heathExpenditures = heathExpenditures;
     }
@@ -22,12 +23,18 @@ public final class Indivudual extends TaxPayer {
     @Override
     public double tax(){
         double taxRate = 0.0;
-        if (getAnualIncome() <= 20000.00)
+        if (getAnualIncome() < 20000.00)
             taxRate = 0.15;
         else{
             taxRate = 0.25;
         }
-        return getAnualIncome() * tax();
+        return getAnualIncome() * taxRate - heathExpenditures * 0.50;
+    }
+    @Override
+    public String showOnScreen(){
+        return this.getName()
+                + ": $ "
+                + String.format("%.2f", tax());
     }
 
 }
