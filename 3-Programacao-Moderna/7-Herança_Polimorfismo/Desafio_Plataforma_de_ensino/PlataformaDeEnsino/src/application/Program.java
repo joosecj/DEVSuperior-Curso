@@ -32,7 +32,6 @@ public class Program {
                 System.out.print("Duração em segundos: ");
                 int seconds = sc.nextInt();
                 lessonList.add(new Video(title, url, seconds));
-
             }else {
                 System.out.print("Descrição: ");
                 String description = sc.nextLine();
