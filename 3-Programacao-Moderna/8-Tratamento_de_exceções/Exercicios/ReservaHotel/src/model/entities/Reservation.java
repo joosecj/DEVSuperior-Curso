@@ -15,7 +15,6 @@ public class Reservation {
         this.checkIn = checkIn;
         this.checkOut = checkOut;
     }
-
     public Integer getRoomNumber() {
         return roomNumber;
     }
@@ -36,7 +35,7 @@ public class Reservation {
     }
     public void updateDates(Date checkIn, Date checkOut){
         this.checkIn = checkIn;
-        this.checkOut = getCheckOut();
+        this.checkOut = checkOut;
     }
     @Override
     public String toString() {
