@@ -21,8 +21,9 @@ public class Program {
         System.out.println();
         for(int i = 1; i <= n; i++){
             System.out.println("Dados da " + i +"º aula:");
-            System.out.print("Conteúdo ou tarefa (c/t)?");
+            System.out.print("Conteúdo ou tarefa (c/t)? ");
             char ch = sc.next().charAt(0);
+            sc.nextLine();
             System.out.print("Título: ");
             String title = sc.nextLine();
             if (ch == 'c'){
@@ -42,12 +43,12 @@ public class Program {
         System.out.println();
         }
 
-        System.out.println();
         int sum = 0;
         for(Lesson list : lessonList){
             sum += list.durantion();
         }
         System.out.println("DURAÇÃO TOTAL DO CURSO = " + sum + " segundos");
+        System.out.println(lessonList.toString());
 
         sc.close();
     }
