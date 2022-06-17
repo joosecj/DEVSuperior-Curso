@@ -23,6 +23,10 @@ public class Program {
             System.out.println("Dados da " + i +"º aula:");
             System.out.print("Conteúdo ou tarefa (c/t)? ");
             char ch = sc.next().charAt(0);
+            while (ch != 'c' && ch != 't'){
+                System.out.print("Dados inválidos, favor digitar novamente (c/t): ");
+                ch = sc.next().charAt(0);
+            }
             sc.nextLine();
             System.out.print("Título: ");
             String title = sc.nextLine();
@@ -47,7 +51,6 @@ public class Program {
             sum += list.durantion();
         }
         System.out.println("DURAÇÃO TOTAL DO CURSO = " + sum + " segundos");
-        System.out.println(lessonList.toString());
 
         sc.close();
     }
