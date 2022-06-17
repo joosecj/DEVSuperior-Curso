@@ -7,6 +7,10 @@ public abstract class Lesson {
         this.title = title;
     }
 
+    public Lesson() {
+        super();
+    }
+
     public String getTitle() {
         return title;
     }
