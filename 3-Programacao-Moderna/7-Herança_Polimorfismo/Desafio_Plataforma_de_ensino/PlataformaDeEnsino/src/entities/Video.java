@@ -33,9 +33,11 @@ public final class Video extends Lesson{
     public int durantion(){
         return seconds;
     }
-
-//    public String toString (){
-//        return
-//    }
+    @Override
+    public String toString (){
+        return "DURAÇÃO TOTAL DO CURSO = "
+                + durantion()
+                + " segundos";
+    }
 }
 

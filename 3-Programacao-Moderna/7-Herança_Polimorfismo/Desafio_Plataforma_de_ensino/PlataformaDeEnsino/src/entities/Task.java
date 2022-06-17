@@ -35,4 +35,10 @@ public final class Task extends Lesson {
     public int durantion(){
         return questionCount * 5;
     }
+    @Override
+    public String toString (){
+        return "DURAÇÃO TOTAL DO CURSO = "
+                + durantion()
+                + " segundos";
+    }
 }
