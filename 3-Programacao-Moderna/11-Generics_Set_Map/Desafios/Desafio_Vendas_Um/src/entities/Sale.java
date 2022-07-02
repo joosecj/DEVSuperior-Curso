@@ -61,18 +61,4 @@ public class Sale {
         return this.total / this.items;
     }
 
-    @Override
-    public String toString() {
-        return this.month
-                + "/"
-                + this.year
-                + " "
-                + this.seller
-                + ", "
-                + this.items
-                + " "
-                + String.format("%.2f", this.total)
-                + ", pm = "
-                + String.format("%.2f", averagePrice());
-    }
 }
