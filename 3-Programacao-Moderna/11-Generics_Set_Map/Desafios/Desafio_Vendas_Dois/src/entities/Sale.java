@@ -19,7 +19,6 @@ public class Sale {
         this.items = items;
         this.total = total;
     }
-
     public Integer getMonth() {
         return month;
     }
@@ -77,7 +76,6 @@ public class Sale {
         if (items != null ? !items.equals(sale.items) : sale.items != null) return false;
         return total != null ? total.equals(sale.total) : sale.total == null;
     }
-
     @Override
     public int hashCode() {
         int result = month != null ? month.hashCode() : 0;
