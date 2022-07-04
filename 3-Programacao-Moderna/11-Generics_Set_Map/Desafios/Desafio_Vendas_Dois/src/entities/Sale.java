@@ -1,4 +1,4 @@
-package entitites;
+package entities;
 
 public class Sale {
     private Integer month;

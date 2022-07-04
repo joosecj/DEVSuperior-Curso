@@ -1,6 +1,6 @@
 package application;
 
-import entitites.Sale;
+import entities.Sale;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
